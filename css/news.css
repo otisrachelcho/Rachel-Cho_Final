@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+  }
+      
+  li{list-style:none;}
+  body {
+    background-color: #f1f1f1; 
+  }
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+ .flier {
+	pointer-events: none;
+}
+
+.flier > * {
+        animation: fly 50s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 2s;
+	z-index: 999999;
+}
+
+@keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  
+  .row {
+    margin: 8px -16px;
+  }
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+	  .main{padding:30px;}
+	  .main p{margin-bottom:40px;}
+  }
+   .parallax {
+    background-image:url("../image/EDGE NINETY 4.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .parallax h1{
+    padding-top: 170px;
+    font-family: halyard-text;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px; 
+    color:darkorange;
+    text-align: center;
+    letter-spacing: 5px;  
+  }
+  
+  .parallax p{
+    font-family: halyard-text;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 27px; 
+    color: darkorange;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+  .button {
+          -webkit-appearance: none;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 10px 30px 10px 30px;
+          font-family: halyard-text;
+          font-weight: 400;
+         font-style: normal;
+          font-size: 12px;
+          text-align: center;
+          display: inline-block;
+          text-decoration: none;
+          cursor: pointer;
+          border: 0;
+          border-radius: 3px;
+          background: #04091D;
+          color: #FFFFFF; 
+          -moz-transition: background-color .25s ease-in-out;
+          -webkit-transition: background-color .25s ease-in-out;
+          -ms-transition: background-color .25s ease-in-out;
+          transition: background-color .25s ease-in-out;
+          }
+
+      .button:hover{
+          background:#0B1A55;
+          
+      }
+
+
+      

@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column {
+    -ms-flex: 25%; 
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  .parallax {
+    background-image: url("../image/e.JPG");
+    min-height: 530px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .parallax h1 {
+    padding-top: 160px;
+    font-family: halyard-text;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px; 
+    color:#04091D;
+    text-align: center;
+    letter-spacing: 15px;
+      }
+      
+   .parallax p{
+    font-family: halyard-text;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px; 
+    color:#04091D;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+
+  
